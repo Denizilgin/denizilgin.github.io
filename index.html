@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KOPPEE - Coffee Shop HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f1440c">
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">DYRIX GAMES</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Ana Sayfa</a>
+                    <button style= "background-color: transparent; outline: none; border: none;" onclick="asagiKaydirAbout()" class="nav-item nav-link">Hakkımızda</button>
+                    <button style= "background-color: transparent; outline: none; border: none;" onclick="asagiKaydirDuyurular()" class="nav-item nav-link">Duyurular</button>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Oyunlarımız</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="2doyunlar.html" class="dropdown-item">2D Oyunlarımız</a>
+                            <a href="3doyunlar.html" class="dropdown-item">3D Oyunlarımız</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Çalışanlarımız</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="tasarimcilar.html" class="dropdown-item">Tasarımcılar</a>
+                            <a href="muhendisler.html" class="dropdown-item">Mühendisler</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/s1.png" alt="Image">
+                    <a  href="./erangos.html">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" 
+                        style="left: 0; right: 0; bottom: 0; background: rgb(25 19 45 / 70%); z-index: 1;">
+                            <h1 class="display-1 text-white m-0">Erangos</h1>
+                            <h2 class="text-white m-0">* Mini Story Based Adventure Game *</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/d2.jpg" alt="Image">
+                    <a href="./hoppy.html"> <!-- Burada eksik olan </a> etiketi eklendi -->
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" 
+                        style="left: 0; right: 0; bottom: 0; background: rgb(42 5 45 / 70%); z-index: 1;">
+                            <h1 class="display-1 text-white m-0">Hoppy</h1>
+                            <h2 class="text-white m-0">* Test your reflex! *</h2>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div id= "about-section">
+    <div class="container-fluid py-5" style = "background-color: #22113D;">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Dyrix Games</h4>
+                <h1 class="display-4" style="color: #E89419">Hakkımızda</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5" style = "color:wheat">
+                    <h1 class="mb-3" style="color: #fffed5;">Biz Kimiz</h1>                 
+                    <p>Dyrix Games, yaratıcılık ve tutku ile dolu bir ekip tarafından kurulan bir oyun geliştirme şirketidir. 
+                        Amacımız, oyunculara benzersiz ve unutulmaz deneyimler sunmak için sınırları zorlamak ve inovasyonu teşvik etmektir.</p>
+                    
+                </div>
+                <div class="col-lg-4 py-5 py-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/logopng.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3" style = "color:wheat">Vizyonumuz</h1>
+                    <p style="color: #E89419">Vizyonumuz, oyun dünyasında öncü olmak ve oyun severlere heyecan verici, 
+                        özgün ve bağımlılık yaratıcı deneyimler sunmaktır. Oyuncuların kalbini kazanmak için her projemizde tutku ve özenle çalışıyoruz.</p>
+                    <h5 class="mb-3" style="color: #fffed5;"><i class="fa fa-check text-primary mr-3"></i>Her projemizde yaratıcılığa önem veriyor, sıradışı fikirleri teşvik ediyoruz.</h5>
+                    <h5 class="mb-3" style="color: #fffed5;"><i class="fa fa-check text-primary mr-3"></i>En üst düzeyde kalite standartlarına bağlı kalıyor, oyuncularımıza mükemmel deneyimler sunuyoruz.</h5>
+                    <h5 class="mb-3" style="color: #fffed5;"><i class="fa fa-check text-primary mr-3"></i>Teknoloji ve trendleri takip ederek sürekli olarak yenilikçi oyunlar üretiyoruz.</h5>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function asagiKaydirAbout() {
+    var element = document.getElementById("about-section");
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function asagiKaydirDuyurular() {
+    var element = document.getElementById("duyuru-section");
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div id= "duyuru-section">
+    <div class="container-fluid pt-5" style = "background-color: #f1440c;">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Oyunlarımız Hakkında</h4>
+                <h1 class="display-4">Duyurular</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <a href="#" onclick="acilirPencereAc()">
+                                <img class="img-fluid mb-3 mb-sm-0" src="img/kid-erangos.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa-solid fa-wand-sparkles fa-shake"></i>Erangos Yayında!</h4>
+                            <p class="m-0" style = "color: #fff;">Gizem ve macera dolu bu dünyada birlikte yolculuğa çıkmaya hazır mısınız? 
+                                Uçsuz bucaksız astral alemlerde kaybolun, eski sırları keşfedin ve karanlık güçlerle mücadele edin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/play-on-web.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa-solid fa-gamepad fa-bounce"></i></i>İndirmeye Gerek Yok!</h4>
+                            <p class="m-0" style = "color: #fff;">Artık bazı oyunlarımızı indirmeden websitemizden direkt olarak oynayabilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <a href="#" onclick="acilirPencereAc2()">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/stickman.png" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa-solid fa-puzzle-piece fa-flip"></i></i>Adını Sen Belirle</h4>
+                            <p class="m-0" style = "color: #fff;">Yeni çıkacak oyunumuzun adını siz belirliyorsunuz! Detaylı bilgi için habere tıkla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/intern.png" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa-solid fa-graduation-cap fa-shake"></i>Staj Başvuruları</h4>
+                            <p class="m-0" style = "color: #fff;">Uzun dönem ve yaz dönemi stajyer alımlarımız başladı!
+                                Sen de bizimle beraber öğrenerek çalışmak istiyorsan hemen başvur!</p>
+                                <a href="./duyurular.html"  style="color: #E89419; margin-left:150px;" class="btn font-weight-bold py-2 px-4 mt-2 ">Daha Fazlası</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Service End -->
+    <script>
+        function acilirPencereAc() {
+            // window.open metoduyla yeni bir pencere açılır
+            window.open("erangos-haber.html", "Açılır Pencere", "width=1080,height=500");
+        }
+        function acilirPencereAc2() {
+            // window.open metoduyla yeni bir pencere açılır
+            window.open("isim-haber.html", "Açılır Pencere", "width=1080,height=500");
+        }
+    </script>
+
+    <!-- Offer Start -->
+    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+        <div class="container py-5">
+            <h1 class="display-3 text-primary mt-3">50% İNDİRİM</h1>
+            <h1 class="text-white mb-3">Bu Haftaya Özel</h1>
+            <h4 class="text-white font-weight-normal mb-4 pb-3">Sadece 6 Aralık - 14 Aralık Haftası Geçerli</h4>
+            <form class="form-inline justify-content-center mb-4">
+                <div class="input-group">
+                    <input type="text" class="form-control p-4" placeholder="Email" style="height: 60px;">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary font-weight-bold px-4" type="submit">Üye Ol</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+
+    <!-- Menu Start -->
+    <!-- Menu End -->
+
+
+    <div class="container-fluid my-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">Dyrix Games</h1>
+                                <h1 class="text-white">Hoş Geldiniz!</h1>
+                            </div>
+                            <p class="text-white">Eğer oyunlarımız, hizmetlerimiz veya projelerimiz hakkında daha fazla bilgi almak isterseniz veya herhangi bir konuda destek ihtiyacınız varsa,
+                                 lütfen aşağıdaki iletişim bilgilerimizi kullanarak bizimle iletişime geçmekten çekinmeyin.</p>
+                                 <p class="list-inline text-white m-0">Ayrıca, sosyal medya hesaplarımızı takip ederek en güncel haberlerimize, duyurularımıza ve etkinliklerimize kolayca erişebilirsiniz.</p>
+                            <ul class="list-inline text-white m-0">
+                                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="text-white mb-4 mt-5">BİZE ULAŞIN</h1>
+                            <form class="mb-5">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="İsim"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Email"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                        <option selected>Ne Hakkında</option>
+                                        <option value="1">Oyunlarınız</option>
+                                        <option value="2">Şirketiniz</option>
+                                        <option value="3">Diğer</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Başlık"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Açıklama"
+                                        required="required" />
+                                </div>
+                                
+                                
+                                <div>
+                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Gönder</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Bize Ulaşın</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>İzmit, Kocaeli</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+90 541 763 34 26</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>dyrixgames@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Bizi Takip Edin</h4>
+                <p>Oyunlarımız hakkında güncel haberler için bizi takip etmeyi unutma</p>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Ücretsiz Abone Olun</h4>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/cbb9462aed.js" crossorigin="anonymous"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
